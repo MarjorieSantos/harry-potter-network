@@ -1,9 +1,8 @@
 export const pageLogin = () => {
-
-    window.location = '#login'
-    const divLogin = document.createElement('div');
-    divLogin.classList.add('login');
-    divLogin.innerHTML = `
+  window.location = '#login';
+  const divLogin = document.createElement('div');
+  divLogin.classList.add('login');
+  divLogin.innerHTML = `
     <div class='container-login container'>
         <img src="../assets/pngfuel.com.png" alt="logo do site">
         <div class="inputs-div">
@@ -16,8 +15,7 @@ export const pageLogin = () => {
             <button class='btn btn-confirm' id="confirm-login">CONTINUAR</button>
     </div>
     </div>
-`
+`;
 
-    return divLogin
-}
-
+  return divLogin;
+};
