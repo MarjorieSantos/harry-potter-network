@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "htmlhint": "htmlhint dist/*.html ",
-    "start": "serve public/"
+    "start": "serve"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
