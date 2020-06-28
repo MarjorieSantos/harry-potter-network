@@ -1,7 +1,7 @@
-import { pageLogin } from './home/main.js';
+import { pageLogin } from './login/main.js';
+import { pageHome } from './home/main.js';
 
 const divMain = document.querySelector('#root');
-
 
 const init = () => {
   const currentHash = window.location.hash;
@@ -10,8 +10,11 @@ const init = () => {
     case '#login':
       divMain.appendChild(pageLogin());
       break;
+    case '#home':
+      divMain.appendChild(pageHome());
+      break;
     default:
-      divMain.appendChild(pageLogin());
+      divMain.appendChild(pageHome());
   }
 };
 
