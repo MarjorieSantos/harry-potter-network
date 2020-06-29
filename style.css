@@ -2,10 +2,9 @@
 	border: 0;
 	box-sizing: border-box;
 	font-family: 'Handlee', cursive;
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
 	word-spacing: 1.5px;
     margin: 0;
-    /* height: 100%; */
 	padding: 0;
 }
 
@@ -16,6 +15,7 @@ body {
 
 input, button, a, li {
     cursor: pointer;
+    text-decoration: none;
 }
 
 input {
@@ -140,8 +140,8 @@ input {
 }
 
 .logo img {
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
 }
 
 .title {
@@ -184,7 +184,8 @@ input {
 }
 
 .houses {
-    /* max-width: 1120px; */
+    align-items: center;
+    justify-content: center;
 }
 
 .houses .home-house {
@@ -200,6 +201,10 @@ input {
 
 .home-house h2 {
     margin-top: 25px;
+}
+
+.home-house a {
+    color: black;
 }
 
 .houses span {
@@ -219,6 +224,68 @@ input {
     height: 150px;
 }
 
+.footer-bg {
+    padding: 20px 60px;
+    min-height: 200px;
+    width: 100%;
+    background: #333333;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bg span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-bg .explore a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.redes {
+    margin-top: 50px;
+}
+
+.btn-div {
+    display: flex;
+    align-items: center;
+}
+
+.redes .btn-div button {
+    background: none;
+    color: white;
+    margin: 20px 0px 0px 20px;
+    font-size: 25px;
+}
+
+.redes .btn-div button:nth-child(1) {
+    margin-left: 0;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    width: 290px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    padding: 15px;
+}
 
 @media only screen and (min-width: 500px) {
     .container-login img {
@@ -239,13 +306,16 @@ input {
         flex-wrap: wrap;
     }
 
-    .logo img {
-        width: 300px;
-        height: 400px;
-    }
-
     .presentation span {
         font-size: 20px;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .redes {
+        margin-top: 0;
     }
 
 }
@@ -263,5 +333,14 @@ input {
     .slide-item-img {
         height: 400px;
     }
+
+    .home-house:nth-child(3) span{
+        margin-bottom: 46px;
+    }
+
+    .footer-bg {
+        padding: 30px 200px 20px;
+    }
+
 }
 

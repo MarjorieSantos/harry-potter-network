@@ -1,3 +1,9 @@
+import { modalGrifinoria } from './grifinoria.js';
+import { modalSonserina } from './sonserina.js';
+import { modalCorvinal } from './corvinal.js';
+import { modalLunfaLunfa } from './lunfa-lunfa.js';
+
+
 export const pageHome = () => {
   window.location = '#home';
   const divHome = document.createElement('div');
@@ -23,6 +29,7 @@ export const pageHome = () => {
       <header class="header" id='header'></header>
       <section class='principal-content' id='principal-content'></section>
       <section class="section-houses" id='houses-template'></section>
+      <footer class='footer-bg' id='footer'></footer>
   `;
 
   const header = divHome.querySelector('#header');
@@ -30,7 +37,7 @@ export const pageHome = () => {
     <nav class="nav-menu">
       <ul>
         <li>Home</li>
-        <li>Casas</li>
+        <li id='house'>Casas</li>
         <li>Sobre</li>
       </ul>
     </nav>
@@ -61,7 +68,7 @@ export const pageHome = () => {
         <span>
           Fundada pelo famoso bruxo da época, o poderoso Godric Gryffindor, os membros da Griffinória são conhecidos por sua coragem e lealdade. 
         </span>
-        <button class="btn" style='background: #c51f15'>Ver mais</button>
+        <button class="btn" style='background: #c51f15' id='btn-grifinoria'><a href='#grifinoria'>Ver mais</a></button>
       </div>
       <div class="home-house">
         <img class="img-houses" src="../assets/sonserina.jpg" alt="Sonserina">
@@ -69,7 +76,7 @@ export const pageHome = () => {
         <span>
           A casa Sonserina é conhecida por possuir os membros mais ambiciosos, calculistas e orgulhosos e foi fundada pelo famoso bruxo Salazar Slytherin.
         </span>
-        <button class="btn" style='background: #1d8a1f'>Ver mais</button>
+        <button class="btn" style='background: #1d8a1f' id='btn-sonserina'><a href='#sonserina'>Ver mais</a></button>
       </div>
       <div class="home-house">
         <img class="img-houses" src="../assets/lunfa-lunfa.jpg" alt="Lunfa-Lunfa">
@@ -77,7 +84,7 @@ export const pageHome = () => {
         <span>
           Fundada pelo bruxa Helga Hufflepuff, a casa Lufa-Lufa tem como membros os mais gentis, pacientes e tolerantes alunos. 
         </span>
-        <button class="btn" style='background: #dfb30e'>Ver mais</button>
+     <a class="btn" style='background: #dfb30e' id='btn-lunfalunfa'href='#lunfa-lunfa'>Ver mais</a>
       </div>
       <div class="home-house">
         <img class="img-houses" src="../assets/corvinal.jpg" alt="Corvinal">
@@ -85,7 +92,28 @@ export const pageHome = () => {
         <span>
           Corvinal é a casa daqueles que tem uma grande capacidade intelectual, ou até mesmo os que são focados nos estudos e foi fundada pelo bruxa Rowena Revenclaw.
         </span>
-        <button class="btn" style='background: #0297bf'>Ver mais</button>
+        <button class="btn" style='background: #0297bf' id='btn-corvinal'><a href='#convinal'>Ver mais</a></button>
+      </div>
+    </div>
+    <div id='modal'></di>
+  `;
+
+  const footer = divHome.querySelector('#footer');
+  footer.innerHTML += `
+    <div class='footer'>
+      <div class='explore column'>
+        <span>Explore: </span>
+        <a href="https://www.jkrowling.com/" target="blank"> ❯ K.K Rowling</a>
+        <a href="https://www.harrypotterstore.com.br/" target="blank"> ❯ Harry Potter Store</a>
+        <a href="https://www.wizardingworld.com/" target="blank"> ❯ Wizarding World</a>
+      </div>
+      <div class='redes column'>
+        <span>Contato:</span>
+        <div class='btn-div'>
+          <button><i class="fa fa-instagram icon"></i></button>
+          <button><i class="fa fa-linkedin icon"></i> </button>
+          <button><i class="fa fa-facebook icon"></i> </button>
+        </div>
       </div>
     </div>
   `;
@@ -107,6 +135,41 @@ export const pageHome = () => {
 
   showSlides();
 
+  const btnCorvinal = houses.querySelector('#btn-corvinal');
+  const btnGrifinoria = houses.querySelector('#btn-grifinoria');
+  const btnSonserina = houses.querySelector('#btn-sonserina');
+  const btnLunfaLunfa = houses.querySelector('#btn-lunfalunfa');
+  const openModal = houses.querySelector('#modal');
+
+  const init = (event) => {
+    event.preventDefault();
+    openModal.innerHTML = '';
+    switch (event.currentTarget.hash) {
+      case '#grifinoria':
+        openModal.appendChild(modalGrifinoria());
+        break;
+      case '#corvinal':
+        openModal.appendChild(modalCorvinal());
+        break;
+      case '#lunfa-lunfa':
+        openModal.appendChild(modalLunfaLunfa());
+        break;
+      case '#sonserina':
+        openModal.appendChild(modalSonserina());
+        break;
+      default:
+        openModal.appendChild(modalSonserina());
+    }
+  };
+
+  // window.addEventListener('hashchange', () => {
+  //   init();
+  // });
+
+  btnLunfaLunfa.addEventListener('click', init);
+  btnGrifinoria.addEventListener('click', init);
+  btnSonserina.addEventListener('click', init);
+  btnCorvinal.addEventListener('click', init);
 
   return divHome;
 };
