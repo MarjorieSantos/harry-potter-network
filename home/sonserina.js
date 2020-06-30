@@ -14,12 +14,12 @@ export const modalSonserina = () => {
       <span>A Sonserina corresponde aproximadamente ao elemento água, devido às serpentes serem comumente associadas ao mar e aos lagos na mitologia da Europa Ocidental, bem como às serpentes serem animais fisicamente fluidos e flexíveis.</span>
     </div>
     <div>
-      <span>Traços</span>
+      <span>Traços:</span>
       <ul>
-        <li>Astúcia</li>
-        <li>Liderança</li>
-        <li>Ambição</li>
-        <li>Determinação</li>
+        <li>❱ Astúcia</li>
+        <li>❱ Liderança</li>
+        <li>❱ Ambição</li>
+        <li>❱ Determinação</li>
       </ul>
     </div>
     <div>

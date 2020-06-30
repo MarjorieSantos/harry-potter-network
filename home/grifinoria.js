@@ -16,10 +16,10 @@ export const modalGrifinoria = () => {
     <div>
       <span>Traços:</span>
       <ul>
-        <li>Coragem</li>
-        <li>Ousadia</li>
-        <li>Nobreza</li>
-        <li>Lealdade</li>
+        <li>❱ Coragem</li>
+        <li>❱ Ousadia</li>
+        <li>❱ Nobreza</li>
+        <li>❱ Lealdade</li>
       </ul>
     </div>
     <div>

@@ -16,10 +16,10 @@ export const modalLufaLufa = () => {
     <div>
       <span>Traços:</span>
       <ul>
-        <li>Paciência</li>
-        <li>Disposição</li>
-        <li>Lealdade</li>
-        <li>Gentileza</li>
+        <li>❱ Paciência</li>
+        <li>❱ Disposição</li>
+        <li>❱ Lealdade</li>
+        <li>❱ Gentileza</li>
       </ul>
     </div>
     <div>

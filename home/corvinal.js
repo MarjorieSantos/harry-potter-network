@@ -16,10 +16,10 @@ export const modalCorvinal = () => {
     <div>
       <span>Traços:</span>
       <ul>
-        <li>Criatividade</li>
-        <li>Sabedoria</li>
-        <li>Sagacidade</li>
-        <li>Nitidez</li>
+        <li>❱ Criatividade</li>
+        <li>❱ Sabedoria</li>
+        <li>❱ Sagacidade</li>
+        <li>❱ Nitidez</li>
       </ul>
     </div>
     <div>
