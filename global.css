@@ -1,3 +1,77 @@
-@import url('login.css');
-@import url('modal.css');
-@import url('style.css');
+@import url('css/reset.css');
+@import url('css/login.css');
+@import url('css/home.css');
+@import url('css/modal.css');
+@import url('css/colors-btn.css');
+
+.btn {
+    border: none;
+    border-radius: 50px;
+    color: black;
+    height: auto;
+    padding: 10px 25px;
+}
+
+@media only screen and (min-width: 500px) {
+    .container-login img {
+        padding: 0px 30px 0px 30px;
+    }
+
+    .img-houses {
+        width: 200px;
+        height: 200px;
+    }
+
+    .slide-item-img {
+        height: 285px;
+    }
+
+    .houses {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .presentation span {
+        font-size: 20px;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .redes {
+        margin-top: 0;
+    }
+
+}
+
+@media only screen and (min-width: 768px)  {
+    .presentation {
+        margin-left: 20px;
+    }
+
+    .principal-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .slide-item-img {
+        height: 400px;
+    }
+
+    .home-house:nth-child(3) span{
+        margin-bottom: 46px;
+    }
+
+    .footer-bg {
+        padding: 30px 200px 20px;
+    }
+
+    .modal {
+        font-size: 20px;
+        width: 500px;
+        max-height: 700px;
+    }
+}
+
+

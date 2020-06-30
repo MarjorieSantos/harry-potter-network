@@ -3,7 +3,6 @@ import { modalSonserina } from './sonserina.js';
 import { modalCorvinal } from './corvinal.js';
 import { modalLufaLufa } from './lunfa-lunfa.js';
 
-
 export const pageHome = () => {
   window.location = '#home';
   const divHome = document.createElement('div');
@@ -52,7 +51,7 @@ export const pageHome = () => {
           <span>
             Bem-vindo ao Harry Potter Network, onde você encontrará várias curiosidades sobre o Harry Potter para mantê-lo ocupado, incluindo feitiços, sobre as casas para os leitores iniciantes, bem como para aqueles que já estão familiarizados com o mundo bruxo.
           </span>
-          <button class='btn principal-btn'>Ver mais</button>
+          <a href='#sobre' class='btn principal-btn'>Ver Mais</a>
         </div>
   `;
 

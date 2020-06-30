@@ -1,0 +1,31 @@
+.modal {
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    width: 350px;
+    max-height: 550px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    padding: 15px 25px;
+    overflow-y: scroll;
+}
+
+.modal .icon {
+    font-size: 30px;
+    color: black;
+}
+
+#close-modal {
+    border: none;
+    background-color: white;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modal div {
+    text-align: justify;
+    margin-top: 15px;
+}
