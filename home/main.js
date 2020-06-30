@@ -35,9 +35,9 @@ export const pageHome = () => {
   header.innerHTML = `
     <nav class="nav-menu">
       <ul>
-        <li>Home</li>
-        <li id='house'>Sobre</li>
-        <li>Casas</li>
+        <li><a href='#home'>Home</a></li>
+        <li><a href='#about'>Sobre</a></li>
+        <li><a href='#houses'>Casas</a></li>
         <li><a href='#quiz'>Quiz</a></li>
       </ul>
     </nav>
@@ -52,7 +52,7 @@ export const pageHome = () => {
           <span>
             Bem-vindo ao Harry Potter Network, onde você encontrará várias curiosidades sobre o Harry Potter para mantê-lo ocupado, incluindo feitiços, sobre as casas para os leitores iniciantes, bem como para aqueles que já estão familiarizados com o mundo bruxo.
           </span>
-          <a href='#sobre' class='btn principal-btn'>Ver Mais</a>
+          <a href='#about' class='btn principal-btn'>Ver Mais</a>
         </div>
   `;
 

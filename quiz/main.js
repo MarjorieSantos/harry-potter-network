@@ -7,9 +7,9 @@ export const pageQuiz = () => {
       <header class="header" id='header'>
         <nav class="nav-menu">
           <ul>
-            <li>Home</li>
-            <li id='house'>Sobre</li>
-            <li>Casas</li>
+            <li><a href='#home'>Home</a></li>
+            <li><a href='#about'>Sobre</a></li>
+            <li><a href='#houses'>Casas</a></li>
             <li><a href='#quiz'>Quiz</a></li>
           </ul>
         </nav>
