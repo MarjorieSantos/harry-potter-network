@@ -36,8 +36,9 @@ export const pageHome = () => {
     <nav class="nav-menu">
       <ul>
         <li>Home</li>
-        <li id='house'>Casas</li>
-        <li>Sobre</li>
+        <li id='house'>Sobre</li>
+        <li>Casas</li>
+        <li><a href='#quiz'>Quiz</a></li>
       </ul>
     </nav>
   `;

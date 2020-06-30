@@ -1,5 +1,6 @@
 import { pageLogin } from './login/main.js';
 import { pageHome } from './home/main.js';
+import { pageQuiz } from './quiz/main.js';
 
 const divMain = document.querySelector('#root');
 
@@ -12,6 +13,9 @@ const init = () => {
       break;
     case '#home':
       divMain.appendChild(pageHome());
+      break;
+    case '#quiz':
+      divMain.appendChild(pageQuiz());
       break;
     default:
       divMain.appendChild(pageHome());

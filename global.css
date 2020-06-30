@@ -3,6 +3,7 @@
 @import url('css/home.css');
 @import url('css/modal.css');
 @import url('css/colors-btn.css');
+@import url('css/quiz.css');
 
 .btn {
     border: none;
@@ -71,6 +72,14 @@
         font-size: 20px;
         width: 500px;
         max-height: 700px;
+    }
+
+    .quiz {
+        font-size: 20px;
+    }
+
+    .cover {
+        max-height: 400px;
     }
 }
 
