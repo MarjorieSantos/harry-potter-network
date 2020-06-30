@@ -68,7 +68,7 @@ export const pageHome = () => {
         <span>
           Fundada pelo famoso bruxo da época, o poderoso Godric Gryffindor, os membros da Griffinória são conhecidos por sua coragem e lealdade. 
         </span>
-        <a class="btn" style='background: #c51f15' id='btn-grifinoria' href='#grifinoria'>Ver mais</a>
+        <a class="btn grifinoria" id='btn-grifinoria' href='#grifinoria'>Ver mais</a>
       </div>
       <div class="home-house">
         <img class="img-houses" src="../assets/sonserina.jpg" alt="Sonserina">
@@ -76,7 +76,7 @@ export const pageHome = () => {
         <span>
           A casa Sonserina é conhecida por possuir os membros mais ambiciosos, calculistas e orgulhosos e foi fundada pelo famoso bruxo Salazar Slytherin.
         </span>
-        <a class="btn" style='background: #1d8a1f' id='btn-sonserina' href='#sonserina'>Ver mais</a>
+        <a class="btn sonserina" id='btn-sonserina' href='#sonserina'>Ver mais</a>
       </div>
       <div class="home-house">
         <img class="img-houses" src="../assets/lunfa-lunfa.jpg" alt="Lufa-Lufa">
@@ -84,7 +84,7 @@ export const pageHome = () => {
         <span>
           Fundada pelo bruxa Helga Hufflepuff, a casa Lufa-Lufa tem como membros os mais gentis, pacientes e tolerantes alunos. 
         </span>
-        <a class="btn" style='background: #dfb30e' id='btn-lufalufa' href='#lufalufa'>Ver mais</a>
+        <a class="btn lufa-lufa" id='btn-lufalufa' href='#lufalufa'>Ver mais</a>
       </div>
       <div class="home-house">
         <img class="img-houses" src="../assets/corvinal.jpg" alt="Corvinal">
@@ -92,7 +92,7 @@ export const pageHome = () => {
         <span>
           Corvinal é a casa daqueles que tem uma grande capacidade intelectual, ou até mesmo os que são focados nos estudos e foi fundada pelo bruxa Rowena Revenclaw.
         </span>
-        <a class="btn" style='background: #0297bf' id='btn-corvinal' href='#corvinal'>Ver mais</a>
+        <a class="btn corvinal" id='btn-corvinal' href='#corvinal'>Ver mais</a>
       </div>
     </div>
     <div id='modal'></div>
