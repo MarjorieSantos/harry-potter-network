@@ -1,7 +1,7 @@
 import { modalGrifinoria } from './grifinoria.js';
 import { modalSonserina } from './sonserina.js';
 import { modalCorvinal } from './corvinal.js';
-import { modalLunfaLunfa } from './lunfa-lunfa.js';
+import { modalLufaLufa } from './lunfa-lunfa.js';
 
 
 export const pageHome = () => {
@@ -52,7 +52,7 @@ export const pageHome = () => {
           <span>
             Bem-vindo ao Harry Potter Network, onde você encontrará várias curiosidades sobre o Harry Potter para mantê-lo ocupado, incluindo feitiços, sobre as casas para os leitores iniciantes, bem como para aqueles que já estão familiarizados com o mundo bruxo.
           </span>
-          <button class='btn'>Ver mais</button>
+          <button class='btn principal-btn'>Ver mais</button>
         </div>
   `;
 
@@ -68,7 +68,7 @@ export const pageHome = () => {
         <span>
           Fundada pelo famoso bruxo da época, o poderoso Godric Gryffindor, os membros da Griffinória são conhecidos por sua coragem e lealdade. 
         </span>
-        <button class="btn" style='background: #c51f15' id='btn-grifinoria'><a href='#grifinoria'>Ver mais</a></button>
+        <a class="btn" style='background: #c51f15' id='btn-grifinoria' href='#grifinoria'>Ver mais</a>
       </div>
       <div class="home-house">
         <img class="img-houses" src="../assets/sonserina.jpg" alt="Sonserina">
@@ -76,15 +76,15 @@ export const pageHome = () => {
         <span>
           A casa Sonserina é conhecida por possuir os membros mais ambiciosos, calculistas e orgulhosos e foi fundada pelo famoso bruxo Salazar Slytherin.
         </span>
-        <button class="btn" style='background: #1d8a1f' id='btn-sonserina'><a href='#sonserina'>Ver mais</a></button>
+        <a class="btn" style='background: #1d8a1f' id='btn-sonserina' href='#sonserina'>Ver mais</a>
       </div>
       <div class="home-house">
-        <img class="img-houses" src="../assets/lunfa-lunfa.jpg" alt="Lunfa-Lunfa">
-        <h2 class='title'>Lunfa-Lunfa</h2>
+        <img class="img-houses" src="../assets/lunfa-lunfa.jpg" alt="Lufa-Lufa">
+        <h2 class='title'>Lufa-Lufa</h2>
         <span>
           Fundada pelo bruxa Helga Hufflepuff, a casa Lufa-Lufa tem como membros os mais gentis, pacientes e tolerantes alunos. 
         </span>
-     <a class="btn" style='background: #dfb30e' id='btn-lunfalunfa'href='#lunfa-lunfa'>Ver mais</a>
+        <a class="btn" style='background: #dfb30e' id='btn-lufalufa' href='#lufalufa'>Ver mais</a>
       </div>
       <div class="home-house">
         <img class="img-houses" src="../assets/corvinal.jpg" alt="Corvinal">
@@ -92,10 +92,10 @@ export const pageHome = () => {
         <span>
           Corvinal é a casa daqueles que tem uma grande capacidade intelectual, ou até mesmo os que são focados nos estudos e foi fundada pelo bruxa Rowena Revenclaw.
         </span>
-        <button class="btn" style='background: #0297bf' id='btn-corvinal'><a href='#convinal'>Ver mais</a></button>
+        <a class="btn" style='background: #0297bf' id='btn-corvinal' href='#corvinal'>Ver mais</a>
       </div>
     </div>
-    <div id='modal'></di>
+    <div id='modal'></div>
   `;
 
   const footer = divHome.querySelector('#footer');
@@ -138,7 +138,7 @@ export const pageHome = () => {
   const btnCorvinal = houses.querySelector('#btn-corvinal');
   const btnGrifinoria = houses.querySelector('#btn-grifinoria');
   const btnSonserina = houses.querySelector('#btn-sonserina');
-  const btnLunfaLunfa = houses.querySelector('#btn-lunfalunfa');
+  const btnLunfaLunfa = houses.querySelector('#btn-lufalufa');
   const openModal = houses.querySelector('#modal');
 
   const init = (event) => {
@@ -151,20 +151,17 @@ export const pageHome = () => {
       case '#corvinal':
         openModal.appendChild(modalCorvinal());
         break;
-      case '#lunfa-lunfa':
-        openModal.appendChild(modalLunfaLunfa());
+      case '#lufalufa':
+        openModal.appendChild(modalLufaLufa());
         break;
       case '#sonserina':
         openModal.appendChild(modalSonserina());
         break;
       default:
-        openModal.appendChild(modalSonserina());
+        openModal.appendChild(modalGrifinoria());
+        break;
     }
   };
-
-  // window.addEventListener('hashchange', () => {
-  //   init();
-  // });
 
   btnLunfaLunfa.addEventListener('click', init);
   btnGrifinoria.addEventListener('click', init);
