@@ -141,32 +141,26 @@ export const pageHome = () => {
   const btnLunfaLunfa = houses.querySelector('#btn-lufalufa');
   const openModal = houses.querySelector('#modal');
 
-  const init = (event) => {
-    event.preventDefault();
-    openModal.innerHTML = '';
-    switch (event.currentTarget.hash) {
-      case '#grifinoria':
-        openModal.appendChild(modalGrifinoria());
-        break;
-      case '#corvinal':
-        openModal.appendChild(modalCorvinal());
-        break;
-      case '#lufalufa':
-        openModal.appendChild(modalLufaLufa());
-        break;
-      case '#sonserina':
-        openModal.appendChild(modalSonserina());
-        break;
-      default:
-        openModal.appendChild(modalGrifinoria());
-        break;
-    }
-  };
 
-  btnLunfaLunfa.addEventListener('click', init);
-  btnGrifinoria.addEventListener('click', init);
-  btnSonserina.addEventListener('click', init);
-  btnCorvinal.addEventListener('click', init);
+  btnLunfaLunfa.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal.append(modalLufaLufa());
+  });
+
+  btnGrifinoria.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal.append(modalGrifinoria());
+  });
+
+  btnSonserina.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal.append(modalSonserina());
+  });
+
+  btnCorvinal.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal.append(modalCorvinal());
+  });
 
   return divHome;
 };

@@ -1,5 +1,5 @@
 export const modalCorvinal = () => {
-  window.location = '#corvinal';
+  window.location.href = '#home';
   const corvinal = document.createElement('section');
   corvinal.classList.add('modal', 'corvinal');
   corvinal.innerHTML = `

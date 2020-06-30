@@ -34,11 +34,9 @@ export const modalSonserina = () => {
   const close = sonserina.querySelector('#close-modal');
   const modal = sonserina.querySelector('.modal');
 
-  const closeModal = () => {
-    modal.style.display = 'none';
-  };
-
-  close.addEventListener('click', closeModal);
+  close.addEventListener('click', () => {
+    modal.remove();
+  });
 
   return sonserina;
 };

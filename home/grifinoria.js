@@ -1,5 +1,5 @@
 export const modalGrifinoria = () => {
-  window.location.href = '#grifinoria';
+  window.location.href = '#home';
   const grifinoria = document.createElement('section');
   grifinoria.classList.add('modal', 'grifinoria');
   grifinoria.innerHTML = `

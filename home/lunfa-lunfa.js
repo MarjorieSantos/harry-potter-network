@@ -1,5 +1,5 @@
 export const modalLufaLufa = () => {
-  window.location = '#lufalufa';
+  window.location.href = '#home';
   const lufalufa = document.createElement('section');
   lufalufa.classList.add('modal', 'lufalufa');
   lufalufa.innerHTML = `
