@@ -1,0 +1,32 @@
+.sonserina {
+    background: #1d8a1f;
+}
+
+.corvinal {
+    background: #0297bf;
+}
+
+.lufa-lufa {
+    background: #dfb30e;
+}
+
+.grifinoria {
+    background: #c51f15;
+}
+
+
+.box-shadow-sonserina {
+    text-shadow: 1px 1px 2px #1d8a1f, 0 0 1em #1d8a1f, 0 0 0.1em #1d8a1f;
+}
+
+.box-shadow-corvinal {
+    text-shadow: 1px 1px 2px #0297bf, 0 0 1em #0297bf, 0 0 0.1em #0297bf;
+}
+
+.box-shadow-lufa-lufa {
+    text-shadow: 1px 1px 2px #dfb30e, 0 0 1em #dfb30e, 0 0 0.1em #dfb30e;
+}
+
+.box-shadow-grifinoria {
+    text-shadow: 1px 1px 2px #c51f15, 0 0 1em #c51f15, 0 0 0.1em #c51f15;
+}

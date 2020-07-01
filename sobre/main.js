@@ -17,8 +17,9 @@ export const pageAbout = () => {
     `;
 
   const aboutText = divAbout.querySelector('#about-text');
-  aboutText.innerHTML = `
-  
+  aboutText.innerHTML += `
+
+
   `;
 
   return divAbout;
