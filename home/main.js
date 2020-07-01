@@ -110,9 +110,9 @@ export const pageHome = () => {
       <div class='redes column'>
         <span>Contato:</span>
         <div class='btn-div'>
-          <button><i class="fa fa-instagram icon"></i></button>
-          <button><i class="fa fa-linkedin icon"></i> </button>
-          <button><i class="fa fa-facebook icon"></i> </button>
+          <a href='https://www.instagram.com/yrmoonn/'><i class="fa fa-instagram icon"></i></a>
+          <a href='www.linkedin.com/in/marjorie-SCF'><i class="fa fa-linkedin icon"></i> </a>
+          <a href='https://www.facebook.com/marjSCF/'><i class="fa fa-facebook icon"></i> </a>
         </div>
       </div>
     </div>

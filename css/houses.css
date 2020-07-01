@@ -3,6 +3,11 @@ p {
     text-align: justify;
 }
 
+.house-bg {
+    width: 100%;
+    display: block;
+}
+
 .houses-template {
     padding: 40px;
 }

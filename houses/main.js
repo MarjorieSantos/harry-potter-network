@@ -3,6 +3,9 @@ export const pageHouses = () => {
   const divHouses = document.createElement('section');
   // divHouses.classList.add('houses-template');
   divHouses.innerHTML = `
+      <div>
+        <img class='house-bg' src='../assets/houses.jpg' alt='foto das casas'>
+      </div>
       <header class="header" id='header'>
         <nav class="nav-menu">
           <ul>
@@ -14,6 +17,7 @@ export const pageHouses = () => {
         </nav>
       </header>
       <div id='about-houses'></div>
+      <footer class='footer-bg' id='footer'></footer>
       `;
 
   const housesAbout = divHouses.querySelector('#about-houses');
@@ -29,6 +33,27 @@ export const pageHouses = () => {
     <div class='space-divs' id='sonserina-text'></div>
     <div class='space-divs' id='lufa-lufa-text'></div>
     `;
+
+  const footer = divHouses.querySelector('#footer');
+  footer.innerHTML += `
+      <div class='footer'>
+        <div class='explore column'>
+          <span>Explore: </span>
+          <a href="https://www.jkrowling.com/" target="blank"> ❯ K.K Rowling</a>
+          <a href="https://www.harrypotterstore.com.br/" target="blank"> ❯ Harry Potter Store</a>
+          <a href="https://www.wizardingworld.com/" target="blank"> ❯ Wizarding World</a>
+        </div>
+        <div class='redes column'>
+          <span>Contato:</span>
+          <div class='btn-div'>
+            <button><i class="fa fa-instagram icon"></i></button>
+            <button><i class="fa fa-linkedin icon"></i> </button>
+            <button><i class="fa fa-facebook icon"></i> </button>
+          </div>
+        </div>
+      </div>
+    `;
+
 
   const houseCorvinal = divHouses.querySelector('#corvinal-text');
   houseCorvinal.innerHTML = `
