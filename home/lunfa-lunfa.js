@@ -1,14 +1,14 @@
 export const modalLufaLufa = () => {
   window.location.href = '#home';
   const lufalufa = document.createElement('section');
-  lufalufa.classList.add('modal', 'lufalufa');
+  lufalufa.classList.add('modal', 'border-lufa-lufa');
   lufalufa.innerHTML = `
     <div>
-      <button id="close-modal"><i class="far fa-times-circle icon"></i></button>
+      <button class='close-lufa-lufa' id="close-modal"><i class="far fa-times-circle icon"></i></button>
     </div>
     <div>
-      <h1>Lufa-Lufa</h1>
-      <h2>A Lufa-Lufa corresponde ao texugo.</h2>
+      <h2>Lufa-Lufa</h2>
+      <h3>A Lufa-Lufa corresponde ao texugo.</h3>
     </div>
     <div>
       <span>A Lufa-Lufa corresponde ao elemento Terra , e é por essa razão que as cores da Casa foram escolhidos: trigo representado amarelo, enquanto o preto foi o emblemático do solo. </span>

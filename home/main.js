@@ -95,7 +95,7 @@ export const pageHome = () => {
         <a class="btn corvinal" id='btn-corvinal' href='#corvinal'>Ver mais</a>
       </div>
     </div>
-    <div id='modal'></div>
+    <div class='container-modal' id='modal'></div>
   `;
 
   const footer = divHome.querySelector('#footer');

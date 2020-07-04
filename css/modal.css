@@ -1,19 +1,53 @@
 .modal {
     position: fixed;
+    display: block;
     top: 0; bottom: 0; left: 0; right: 0;
     margin: auto;
-    width: 350px;
+    max-width: 450px;
     max-height: 550px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     padding: 15px 25px;
     overflow-y: scroll;
 }
 
+.container-modal {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.modal h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: black;
+    margin: 10px auto 30px;
+}
+
+.modal h3 {
+    margin-top: 10px;
+    text-align: center;
+}
+
 .modal .icon {
     font-size: 30px;
-    color: black;
+}
+
+.close-grifinoria {
+    color: #c51f15;
+}
+
+.close-sonserina {
+    color: #1d8a1f;
+}
+
+.close-lufa-lufa {
+    color: #dfb30e;
+}
+
+.close-corvinal {
+    color: #0297bf;
 }
 
 #close-modal {

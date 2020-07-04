@@ -1,14 +1,14 @@
 export const modalCorvinal = () => {
   window.location.href = '#home';
   const corvinal = document.createElement('section');
-  corvinal.classList.add('modal', 'corvinal');
+  corvinal.classList.add('modal', 'border-corvinal');
   corvinal.innerHTML = `
     <div>
-      <button id="close-modal"><i class="far fa-times-circle icon"></i></button>
+      <button class='close-corvinal' id="close-modal"><i class="far fa-times-circle icon"></i></button>
     </div>
     <div>
-      <h1>Corvinal</h1>
-      <h2>A Corvinal corresponde a Águia.</h2>
+      <h2>Corvinal</h2>
+      <h3>A Corvinal corresponde a Águia.</h3>
     </div>
     <div>
       <span>A Corvinal corresponde aproximadamente ao elemento Ar , e é por essa razão que as cores da Casa foram escolhidas; azul e bronze representam as penas do céu e da águia, respectivamente, ambos tendo muito a ver com o ar.</span>

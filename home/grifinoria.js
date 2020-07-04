@@ -1,14 +1,14 @@
 export const modalGrifinoria = () => {
   window.location.href = '#home';
   const grifinoria = document.createElement('section');
-  grifinoria.classList.add('modal', 'grifinoria');
+  grifinoria.classList.add('modal', 'border-grifinoria');
   grifinoria.innerHTML = `
     <div>
-      <button id="close-modal"><i class="far fa-times-circle icon"></i></button>
+      <button class='close-grifinoria' id="close-modal"><i class="far fa-times-circle icon"></i></button>
     </div>
     <div>
-      <h1>Grifinória</h1>
-      <h2>A Grifinória corresponde ao fogo.</h2>
+      <h2>Grifinória</h2>
+      <h3>A Grifinória corresponde ao fogo.</h3>
     </div>
     <div>
       <span>Seu animal símbolo é o leão, e suas cores são o vermelho e o dourado. A professora Minerva McGonagall é a Diretora mais recente da Casa.</span>

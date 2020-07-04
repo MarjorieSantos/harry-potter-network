@@ -1,14 +1,14 @@
 export const modalSonserina = () => {
   window.location = '#home';
   const sonserina = document.createElement('section');
-  sonserina.classList.add('modal', 'sonserina');
+  sonserina.classList.add('modal', 'border-sonserina');
   sonserina.innerHTML = `
     <div>
-      <button id="close-modal"><i class="far fa-times-circle icon"></i></button>
+      <button class='close-sonserina' id="close-modal"><i class="far fa-times-circle icon"></i></button>
     </div>
     <div>
-      <h1>Sonserina</h1>
-      <h2>A Sonserina corresponde a cobra.</h2>
+      <h2>Sonserina</h2>
+      <h3>A Sonserina corresponde a cobra.</h3>
     </div>
     <div>
       <span>A Sonserina corresponde aproximadamente ao elemento água, devido às serpentes serem comumente associadas ao mar e aos lagos na mitologia da Europa Ocidental, bem como às serpentes serem animais fisicamente fluidos e flexíveis.</span>
