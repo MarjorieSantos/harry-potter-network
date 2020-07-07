@@ -17,6 +17,19 @@ export const pageAbout = () => {
     <footer class='footer-bg' id='footer'></footer>
     `;
 
+  const principalText = divAbout.querySelector('#about-text');
+  principalText.innerHTML = `
+    <div class="title">
+      <h1>Harry Potter NetWork</h1>
+    </div>
+    <div>
+      <p>Aqui você poderá saber mais sobre o universo de Harry Potter e tentar a sorte no nosso quiz especial!</p>
+    </div>
+    <div>
+
+    </div>
+  `
+
   const footer = divAbout.querySelector('#footer');
   footer.innerHTML += `
     <div class='footer'>
